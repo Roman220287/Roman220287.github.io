@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Portfolio - Roman Agterberg</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/custom2.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="Index.html">Roman Agterberg</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="About_me.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Index.html#portfolio">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">Rohn Flick</h1>
+
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">Dit was een groeps project met twee andere devs en drie artists.
+                        Voor dit project hadden we acht weken om een twinstick shooter te maken.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="page-section bg-primary">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white-20 mb-4"></p>
+                    </div>Ik heb in dit project vooral aan de core gameplay machanics gewerkt.
+                         Zoals: de slowmotion, de basic player movements en de granaat.
+                         Ook heb ik veel nieuwe dingen geleerd zoals hoe ik een granaat maak.
+                         Neem een kijkje hier onder naar een paar code snippits en de trailer van de game.</h2>
+                        <hr class="divider divider-light" />
+                        <p class="text-white-20 mb-4"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <!-- Portfolio-->
+        <div id="portfolio">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="container px-4 px-lg-5">
+                  <!-- Centered Video -->
+                <div class="text-center mb-5">
+                    <video controls autoplay class="img-fluid mx-auto d-block" width="800" height="600">
+                        <source src="assets/Videos/Trailer_Rohn_Flick.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+                <!-- Section: Pick-ups -->
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white-20 mb-4">Pick-ups</h2>
+                        <hr class="divider divider-light" />
+                        <p class="text-white-20 mb-4">
+                            Dit script zorgt ervoor dat een speler gezondheid of armor krijgt wanneer hij een object met de juiste tag oppakt (bijv. een medkit of armor pickup). 
+                            Bij aanraking via een trigger wordt het corresponderende aantal punten toegevoegd aan de speler, en het object verdwijnt daarna uit de scène. 
+                            Het script werkt samen met een PlayerHealth component waarin de waarden voor health en armor worden opgeslagen.
+                        </p>
+                    </div>
+                </div>
+                <!-- Centered GIF -->
+                <div class="text-center mb-5">
+                    <img width="640" height="860" class="img-fluid mx-auto d-block" src="assets/Videos/Health + pickups.gif" alt="Health Pickups">
+                </div>
+
+                <!-- Section: Throwing -->
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white-20 mb-4">Throwing</h2>
+                        <hr class="divider divider-light" />
+                        <p class="text-white-20 mb-4">
+                            Dit script laat de speler een beperkt aantal projectielen gooien vanuit een aangewezen punt. 
+                            Bij het indrukken van een ingestelde toets wordt een object gespawned en met kracht vooruit én omhoog geworpen. 
+                            Het gebruikt Rigidbody physics en een cooldown-systeem om herhaald gooien te beperken. 
+                            Het script is volledig configureerbaar via de Unity Inspector.
+                        </p>
+                    </div>
+                </div>
+                <!-- Centered GIF -->
+                <div class="text-center mb-5">
+                    <img width="630" height="860" class="img-fluid mx-auto d-block" src="assets/Videos/Throwing.gif" alt="Throwing Mechanic">
+                </div>
+
+              
+
+            </div>
+        </div>
+    </div>
+</div>
+       
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+         
+              
+        <!-- Footer-->
+      
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
